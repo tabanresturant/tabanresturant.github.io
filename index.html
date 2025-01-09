@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>!----!</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- scroll top button -->
+    <button id="scrollToTopButton" class="scroll-to-top-btn">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Menu overlay -->
+    <div id="menuOverlay"></div>
+
+    <!-- header -->
+
+    <header>
+      <div class="container">
+        <nav id="navbar">
+          <div class="logo">
+            <i class="fa-solid fa-a" style="color: #fff"></i>
+            <a href="index.html">تابان</a>
+          </div>
+          <div id="rightSide">
+            <ul id="navLinks">
+              <li><a href="index.html">خانه</a></li>
+              <li><a href="#menu">منو</a></li>
+              <li><a href="#loc">لوکشن</a></li>
+              <li><a href="index.html">ENGLISH</a></li>
+            </ul>
+            <i class="fa-solid fa-bars" id="menuToggle"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- home section -->
+
+    <section>
+      <div class="sectionOne">
+        <video autoplay muted loop class="bg-video">
+          <source src="assets/Restaur.mp4" type="video/mp4" />
+        </video>
+        <h1>از غذا های ما لذت </h1>
+        <p>
+        یک تجربه ی جدید !
+        </p>
+      </div>
+    </section>
+
+    <!-- menu section -->
+
+    <section class="menu" id="menu">
+      <div class="container">
+        <h2>منو</h2>
+        <div class="menu-items">
+          <button class="category-button" data-category="appetizers">
+            <h3>پیش غذا</h3>
+            <i class="fas fa-bowl-food"></i>
+          </button>
+          <button class="category-button" data-category="mainCourse">
+            <h3>غذا ی اصلی</h3>
+            <i class="fa-solid fa-utensils"></i>
+          </button>
+          <button class="category-button" data-category="dessert">
+            <h3>دسر ها و نوشیدنی ها</h3>
+            <i class="fa-solid fa-cheese"></i>
+          </button>
+          <button class="category-button" data-category="beverage">
+            <h3>Beverages</h3>
+            <i class="fa-solid fa-martini-glass-citrus"></i>
+          </button>
+
+          <!-- Search button -->
+
+          <div class="search-container">
+            <input type="text" id="menuSearch" placeholder="Search...">
+            <i class="fas fa-search search-icon"></i>
+          </div>
+          
+        </div>
+
+        <!-- Categories -->
+
+        <div class="menu-category active" data-category="appetizers">
+          <h3>پیش غذا</h3>
+
+          <ul class="itemsUl">
+            <div class="appItem" data-ingredients="1$ ,">
+              <li>سوپ روز</li>
+
+              <img src="assets/app1.jpg" />
+            </div>
+            <div
+              class="appItem"
+              data-ingredients="1$ ,"
+            >
+              <li>زیتون پرورده</li>
+
+              <img src="assets/app5.jpg" />
+            </div>
+                        <div
+              class="appItem"
+              data-ingredients="1$ ,"
+            >
+              <li>ماست و خیار</li>
+
+              <img src="assets/app6.jpg" />
+            </div>
+                        <div
+              class="appItem"
+              data-ingredients="1$ ,"
+            >
+              <li>سالاد فصل</li>
+
+              <img src="assets/app2.jpg" />
+            </div>
+            <div class="appItem" data-ingredients="1$ ,">
+              <li>سالاد شیرازی</li>
+
+              <img src="assets/app3.jpg" />
+            </div>
+             <div
+              class="appItem"
+              data-ingredients=" 1$ ,"
+            >
+              <li>ماست موسیر</li>
+
+
+              <img src="assets/app7.jpg" />
+            </div>
+          </ul>
+        </div>
+        <div class="menu-category" data-category="mainCourse">
+          <h3>غذای اصلی</h3>
+
+          <ul class="itemsUl">
+            <div
+              class="mainItem"
+              data-ingredients="Cheese, Beef, Tomato, Bread"
+            >
+              <li>Classic Burger - <span>$12.99</span></li>
+              <p>a beef patty, cheese, lettuce, tomato, served on soft buns.</p>
+              <img src="assets/main1.jpg" />
+            </div>
+            <div class="mainItem" data-ingredients="Nuddles, Soya Sauce">
+              <li>Asian Nuddles - <span>$16.99</span></li>
+              <p>
+                a blend of flavors and textures, sure to excite your taste buds.
+              </p>
+              <img src="assets/main2.jpg" />
+            </div>
+            <div class="mainItem" data-ingredients="Salmon, Tomato Sauce">
+              <li>Salmon - <span>$18.99</span></li>
+              <p>
+                a rich flavor profile is perfect for grilling, or pan-searing.
+              </p>
+              <img src="assets/main3.jpg" />
+            </div>
+          </ul>
+        </div>
+        <div class="menu-category" data-category="dessert">
+          <h3>دسر و نوشیدنی ها</h3>
+          <ul class="itemsUl">
+            <div class="dessItem" data-ingredients="Waffle, Fruits">
+              <li>Fruit Waffle - <span>$6.99</span></li>
+              <p>a delightful combination of fluffy waffles with fruits.</p>
+              <img src="assets/dess1.jpg" />
+            </div>
+
+            <div class="dessItem" data-ingredients="Dough, Chocolate">
+              <li>Doughnuts - <span>$5.99</span></li>
+              <p>
+                fluffy, and utterly indulgent, a sweet treat for any occasion.
+              </p>
+              <img src="assets/dess2.jpg" />
+            </div>
+
+            <div class="dessItem" data-ingredients="Flour, Candies">
+              <li>Cupcakes - <span>$4.99</span></li>
+              <p>Beautifully decorated, delightful for any celebration.</p>
+              <img src="assets/dess3.jpg" />
+            </div>
+          </ul>
+        </div>
+        <div class="menu-category" data-category="beverage">
+          <h3>کافی شاپ</h3>
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Green Vegetables, Milk">
+              <li>Detox - <span>$7.99</span></li>
+              <p>a refreshing blend vegetables to cleanse and rejuvenate.</p>
+              <img src="assets/bev1.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Mojito Cocktail - <span>$6.99</span></li>
+              <p>a mix of mint, lime, and soda water, perfect for a party.</p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Milk, Vanilla">
+              <li>Milk Shake - <span>$10.99</span></li>
+              <p>
+                creamy, and available in various flavors for a delightful treat.
+              </p>
+              <img src="assets/bev3.jpg" />
+            </div>
+          </ul>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Location -->
+
+    <section>
+      <div class="loc" id="loc">
+        <div class="container">
+          <h2>لوکیشن</h2>
+          <div class="contact-info">
+ 
+          </div>
+          <div class="contactWrapper">
+            <div class="mapLeftSide">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1665.5585833499522!2d49.7079303!3d33.3941073!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3feb3de9ac5d4561%3A0x929310490a1071d!2z2YfYqtmEINiq2KfZhNin2LEg2KLYqNi02KfYsSDYotioINiz2YHbjNiv!5e0!3m2!1sen!2str!4v1735813458680!5m2!1sen!2str" width="700" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<br>
+<br>
+<br>
+            </div>
+
+
+    <!-- Contact End -->
+        <div class="popupOverlay" id="popup">
+      <div class="popup-content">
+        <h2>
+          توضیحات
+          <span class="close" id="close">&times;</span>
+        </h2>
+        <ul id="ingredients-list"></ul>
+      </div>
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/64c17729fa.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
